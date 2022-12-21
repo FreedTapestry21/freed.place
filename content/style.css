@@ -77,13 +77,32 @@ footer p {
     text-align: center;
 }
 
+.title {
+    position: absolute;
+    top: 40.5%;
+    left: 10%;
+    height: 50%;
+    width: 80%;
+}
+
+.content {
+    margin: 10px;
+
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    min-height: 75%;
+    max-height: 200%;
+    width: 80%;
+}
+
 /* Menu classes */
 
 .menu {
     position: static;
-    top: 10px;
+    top: 0.1%;
     left: 0.5%;
-    height: 106px;
+    height: 10%;
     width: 100%;
 }
 
@@ -216,8 +235,18 @@ footer p {
     animation-duration: 0s !important;
 }
 
+.timeline-parent {
+    height: 120%;
+}
+
 .timeline p {
-    margin: 10px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.arrow {
+    margin: 0px;
+    font-size: 58px;
 }
 
 /* Animations */

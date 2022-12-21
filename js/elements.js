@@ -1,14 +1,14 @@
 /*
     Freeddev - Custom elements
-    Version 1.5.1
+    Version 1.6
     Copyright (c) 2022 FreedTapstry21
 */
 
 /* Custom element class */
 class FreeddevElements extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = "<div></div>";
-        this.style.margin = "1px";
+        this.innerHTML = "<div><br><br></div>";
+        this.style.position = "static";
     }
 }
 
