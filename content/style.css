@@ -1,22 +1,23 @@
 /*
     Freeddev - Stylesheet
-    Version 1.5
+    Version 1.6
     Copyright (c) 2022 FreedTapstry21
 */
 
 :root {
     --animation-duration: 1s;
+    --accent-color: rgb(139, 87, 187);
 }
 
 .light {
     --text-color: rgb(0, 0, 0);
-    --accent-color: rgb(206, 206, 206);
+    --general-color: rgb(206, 206, 206);
     --background-color: rgb(255, 255, 255);
 }
 
 .dark {
     --text-color: rgb(255, 255, 255);
-    --accent-color: rgb(80, 80, 80);
+    --general-color: rgb(80, 80, 80);
     --background-color: rgb(10, 10, 10);
 }
 
@@ -26,17 +27,17 @@ html {
 
 h1 {
     font-size: 32px;
-    color: var(--text-color);
+    color: var(--accent-color);
 }
 
 h2 {
     font-size: 28px;
-    color: var(--text-color);
+    color: var(--accent-color);
 }
 
 h3 {
     font-size: 20px;
-    color: var(--text-color);
+    color: var(--accent-color);
 }
 
 p {
@@ -120,7 +121,7 @@ footer p {
     border: solid;
     border-radius: 20px;
     border-width: 2px;
-    border-color: var(--accent-color);
+    border-color: var(--general-color);
 }
 
 .menu button {
@@ -138,7 +139,7 @@ footer p {
     border: solid;
     border-radius: 20px;
     border-width: 2px;
-    border-color: var(--accent-color);
+    border-color: var(--general-color);
 }
 
 
@@ -146,14 +147,14 @@ footer p {
     animation-name: button-in;
     animation-duration: var(--animation-duration);
 
-    background-color: var(--accent-color);
+    background-color: var(--general-color);
 }
 
 .menu button:hover {
     animation-name: button-in;
     animation-duration: var(--animation-duration);
 
-    background-color: var(--accent-color);
+    background-color: var(--general-color);
 
     cursor: pointer;
 }
@@ -171,7 +172,7 @@ footer p {
     border: solid;
     border-radius: 20px;
     border-width: 2px;
-    border-color: var(--accent-color);
+    border-color: var(--general-color);
 }
 
 .button button {
@@ -187,21 +188,21 @@ footer p {
     border: solid;
     border-radius: 20px;
     border-width: 2px;
-    border-color: var(--accent-color);
+    border-color: var(--general-color);
 }
 
 .button a:hover {
     animation-name: button-in;
     animation-duration: var(--animation-duration);
 
-    background-color: var(--accent-color);
+    background-color: var(--general-color);
 }
 
 .button button:hover {
     animation-name: button-in;
     animation-duration: var(--animation-duration);
 
-    background-color: var(--accent-color);
+    background-color: var(--general-color);
 }
 
 .small-button a {
@@ -216,14 +217,14 @@ footer p {
     border: solid;
     border-radius: 20px;
     border-width: 2px;
-    border-color: var(--accent-color);
+    border-color: var(--general-color);
 }
 
 .small-button a:hover {
     animation-name: button-in;
     animation-duration: var(--animation-duration);
 
-    background-color: var(--accent-color);
+    background-color: var(--general-color);
 }
 
 /* Custom classes */
@@ -258,10 +259,10 @@ footer p {
 
 @keyframes button-in {
     0% {background-color: var(--background-color);}
-    100% {background-color: var(--accent-color);}
+    100% {background-color: var(--general-color);}
 }
 
 @keyframes button-out {
-    0% {background-color: var(--accent-color);}
+    0% {background-color: var(--general-color);}
     100% {background-color: var(--background-color);}
 }
