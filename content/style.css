@@ -249,6 +249,11 @@ footer p {
     font-size: 58px;
 }
 
+/* Accent color */
+.accent {
+    color: var(--accent-color);
+}
+
 /* Animations */
 
 @keyframes button-in {
