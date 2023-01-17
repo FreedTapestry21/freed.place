@@ -1,12 +1,12 @@
 /*
     Freeddev - Stylesheet
-    Version 1.7.1
+    Version 1.7.2
     Copyright (c) 2022-2023 FreedTapstry21
 */
 
 :root {
     --animation-duration: 1s;
-    --accent-color: rgb(139, 87, 187);
+    --accent-color: #8b57bb;
 }
 
 .light {
