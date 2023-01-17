@@ -7,7 +7,7 @@
 /* Custom element class */
 class FreeddevElements extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = "<div><br><br></div>";
+        this.innerHTML = "<br><br><br>";
         this.style.position = "static";
     }
 }
