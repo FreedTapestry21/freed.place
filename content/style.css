@@ -113,8 +113,8 @@ footer p {
     text-align: center;
 
     position: static;
-    top: 0.1%;
-    left: 0.5%;
+    top: 10px;
+    left: 0%;
     height: 10%;
     width: 100%;
 }
@@ -251,6 +251,10 @@ footer p {
 .arrow {
     margin: 0px;
     font-size: 58px;
+}
+
+.no-decoration {
+    text-decoration: none;
 }
 
 /* Accent color */
