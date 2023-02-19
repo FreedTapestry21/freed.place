@@ -1,6 +1,6 @@
 /*
     Freeddev - Timeline
-    Version 1.7.3
+    Version 1.7.4
     Copyright (c) 2022-2023 FreedTapstry21
 */
 

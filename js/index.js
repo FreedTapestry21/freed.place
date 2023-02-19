@@ -1,6 +1,6 @@
 /*
     Freeddev - Index script
-    Version 1.7.3
+    Version 1.7.4
     Copyright (c) 2022-2023 FreedTapstry21
 */
 
@@ -17,8 +17,15 @@ console.log("Hello world!");
 
 if (window.innerWidth < 500) {
     document.getElementById("menu-div").innerHTML = "<br><br>";
-} else if (window.innerHeight < 500) {
+} 
+if (window.innerHeight < 650) {
     document.getElementById("footer").remove();
+} 
+if (window.innerWidth < 450) {
+    alert("Warning: Your horizontal resolution is below the recomended horizontal resolution. You might get a poor experience.");
+}
+if (window.innerHeight < 550) {
+    alert("Warning: Your vertical resolution is below the recomended vertical resolution. You might get a poor experience.");
 }
 
 /*
