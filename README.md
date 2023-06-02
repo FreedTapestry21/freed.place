@@ -6,7 +6,7 @@ I won't try to hack your computer through here. (Atleast not yet ;))
 Not like I have the skills to do that anyway.
 
 ## History
-Freeddev started as an open-source website back in 2021, tho not a lot of effort was put into the design of the website. 
+Freeddev started as an open-source website back in 2021, though not a lot of effort was put into the design of the website. 
 That changed with Freeddev version 1.0, this was the first version to be put on Github and to be released as a website which you can visit.
 The early versions of Freeddev were basic in design and didn't really feature anything. It was just a way for my 13 year old self to show what I was able to do.
 However that changed with version 1.0 as I actually had motivation to make my own website. 
