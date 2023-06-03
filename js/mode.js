@@ -1,6 +1,6 @@
 /*
     Freeddev Dark/Light mode switcher
-    Version 1.7.5
+    Version 2.0-dev
     Copyright (c) 2022-2023 FreedTapstry21
 */
 
