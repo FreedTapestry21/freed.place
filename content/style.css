@@ -8,16 +8,19 @@
     Freed's place - color palette
 
     Accent color: #e7c6ff
-    Secondary accent color: #ffd6ff
+    General (aka secondary accent) color: #ffd6ff
     Text color: #b8c0ff
     Background color: #0d1b2a
 */
 
 :root {
-    --animation-duration: 1s;
+    --animation-duration: 0.5s;
     --accent-color: #e7c6ff;
+    --general-color: #6d597a;
     --text-color: #b8c0ff;
-    --background-color: #0d1b2a;
+    --background-color: rgb(13, 27, 42);
+    --background-color-transparent: rgb(13, 27, 42, 0.8);;
+    --transparent: rgb(13, 27, 42, 0.0);
 }
 
 html {
@@ -44,6 +47,17 @@ p {
     color: var(--text-color);
 }
 
+a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--general-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
 footer {
     text-align: left;
 
@@ -57,9 +71,8 @@ footer {
     opacity: 100%;
 }
 
-footer p {
-    font-size: 11px;
-}
+footer a {font-size: 11px;}
+footer p {font-size: 11px;}
 
 /* Containers */
 .container {
@@ -99,29 +112,6 @@ footer p {
     text-align: center;
 }
 
-/* Buttons */
-.button a {
-    animation-name: button-out;
-    animation-duration: var(--animation-duration);
-
-    text-decoration: none;
-    color: var(--text-color);
-
-    padding: 8px;
-
-    border: solid;
-    border-radius: 20px;
-    border-width: 2px;
-    border-color: var(--general-color);
-}
-
-.button a:hover {
-    animation-name: button-in;
-    animation-duration: var(--animation-duration);
-
-    background-color: var(--general-color);
-}
-
 /* Custom classes */
 .wallpaper {
     background-color: var(--background-color);
@@ -131,19 +121,72 @@ footer p {
     text-decoration: none;
 }
 
+.transparent-background {
+    background-color: var(--background-color-transparent);
+}
+
 /* Accent color */
 .accent {
     color: var(--accent-color);
 }
 
-/* Animations */
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10vh;
+}
 
+.menu .left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1vw;
+}
+
+.menu .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1vw;
+}
+
+.menu a {
+    font-weight: normal;
+
+    animation-name: button-out;
+    animation-duration: var(--animation-duration);
+
+    text-decoration: none;
+    color: var(--text-color);
+
+    margin: 0.5vw;
+    padding: 5px;
+
+    background-color: var(--transparent);
+
+    border: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: var(--general-color);
+}
+
+.menu a:hover {
+    animation-name: button-in;
+    animation-duration: var(--animation-duration);
+
+    background-color: var(--general-color);
+}
+
+/* Animations */
 @keyframes button-in {
-    0% {background-color: var(--background-color);}
+    0% {background-color: var(--transparent);}
     100% {background-color: var(--general-color);}
 }
 
 @keyframes button-out {
     0% {background-color: var(--general-color);}
-    100% {background-color: var(--background-color);}
+    100% {background-color: var(--transparent);}
 }
