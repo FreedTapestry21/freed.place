@@ -4,21 +4,20 @@
     Copyright (c) 2022-2023 FreedTapstry21
 */
 
+/*
+    Freed's place - color palette
+
+    Accent color: #e7c6ff
+    Secondary accent color: #ffd6ff
+    Text color: #b8c0ff
+    Background color: #0d1b2a
+*/
+
 :root {
     --animation-duration: 1s;
-    --accent-color: #8b57bb;
-}
-
-.light {
-    --text-color: rgb(0, 0, 0);
-    --general-color: rgb(206, 206, 206);
-    --background-color: rgb(255, 255, 255);
-}
-
-.dark {
-    --text-color: rgb(255, 255, 255);
-    --general-color: rgb(80, 80, 80);
-    --background-color: rgb(10, 10, 10);
+    --accent-color: #e7c6ff;
+    --text-color: #b8c0ff;
+    --background-color: #0d1b2a;
 }
 
 html {
