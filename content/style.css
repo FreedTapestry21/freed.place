@@ -79,7 +79,9 @@ footer p {font-size: 11px;}
    display: flex;
 
    position: relative;
+   left: 10%;
    height: 100vh;
+   width: 80vw;
 }
 
 .element {
@@ -125,6 +127,33 @@ footer p {font-size: 11px;}
     background-color: var(--background-color-transparent);
 }
 
+.button {
+    font-weight: normal;
+
+    animation-name: button-out;
+    animation-duration: var(--animation-duration);
+
+    text-decoration: none;
+    color: var(--text-color);
+
+    margin: 0.5vw;
+    padding: 5px;
+
+    background-color: var(--transparent);
+
+    border: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: var(--general-color);
+}
+
+.button:hover {
+    animation-name: button-in;
+    animation-duration: var(--animation-duration);
+
+    background-color: var(--general-color);
+}
+
 /* Accent color */
 .accent {
     color: var(--accent-color);
@@ -151,33 +180,6 @@ footer p {font-size: 11px;}
     top: 50%;
     transform: translateY(-50%);
     right: 1vw;
-}
-
-.menu a {
-    font-weight: normal;
-
-    animation-name: button-out;
-    animation-duration: var(--animation-duration);
-
-    text-decoration: none;
-    color: var(--text-color);
-
-    margin: 0.5vw;
-    padding: 5px;
-
-    background-color: var(--transparent);
-
-    border: solid;
-    border-radius: 15px;
-    border-width: 2px;
-    border-color: var(--general-color);
-}
-
-.menu a:hover {
-    animation-name: button-in;
-    animation-duration: var(--animation-duration);
-
-    background-color: var(--general-color);
 }
 
 /* Animations */
