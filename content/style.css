@@ -79,6 +79,16 @@ footer p {
     transform: translateY(-50%);
 }
 
+.vert-bottom {
+    position: absolute;
+    bottom: 0vh;
+}
+
+.vert-top {
+    position: absolute;
+    top: 0vh;
+}
+
 .center {
     display: flex;
     justify-content: center;
