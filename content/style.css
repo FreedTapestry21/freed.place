@@ -89,6 +89,12 @@ footer p {font-size: 11px;}
     height: 100vh;
 }
 
+.title-picture {
+    object-fit: cover; 
+    max-height: 20vh; 
+    max-width: 80vw;
+}
+
 .general {
     min-height: 50vh;
     max-height: 200vh;
