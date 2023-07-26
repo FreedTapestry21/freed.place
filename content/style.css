@@ -66,9 +66,7 @@ footer {
     border-radius: 20px;
 
     position: relative;
-    bottom: 0%;
-
-    opacity: 100%;
+    bottom: 0px;
 }
 
 footer a {font-size: 11px;}
@@ -76,11 +74,10 @@ footer p {font-size: 11px;}
 
 /* Containers */
 .container {
-   display: flex;
+   overflow: scroll;
 
    position: relative;
    left: 10%;
-   height: 100vh;
    width: 80vw;
 }
 
@@ -88,10 +85,21 @@ footer p {font-size: 11px;}
     margin: auto;
 }
 
+.title {
+    height: 100vh;
+}
+
+.general {
+    min-height: 50vh;
+    max-height: 200vh;
+}
+
 .vert-center {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+
+    width: 80vw;
 }
 
 .vert-bottom {
@@ -107,7 +115,6 @@ footer p {font-size: 11px;}
 .center {
     display: flex;
     justify-content: center;
-/*    text-align: center; */
 }
 
 .center-text {
@@ -180,6 +187,15 @@ footer p {font-size: 11px;}
     top: 50%;
     transform: translateY(-50%);
     right: 1vw;
+}
+
+.menu .center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+
+    width: 100%;
 }
 
 /* Animations */
