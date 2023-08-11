@@ -74,19 +74,17 @@ footer p {font-size: 11px;}
 
 /* Containers */
 .container {
-   overflow: scroll;
+   overflow: visable;
 
    position: relative;
    left: 10%;
    width: 80vw;
+   min-height: 100vh;
+   max-height: 200vh;
 }
 
 .element {
     margin: auto;
-}
-
-.title {
-    height: 100vh;
 }
 
 .title-picture {
@@ -95,17 +93,9 @@ footer p {font-size: 11px;}
     max-width: 80vw;
 }
 
-.general {
-    min-height: 50vh;
-    max-height: 200vh;
-}
-
 .vert-center {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 80vw;
+    display: flex;
+    align-items: center;
 }
 
 .vert-bottom {
