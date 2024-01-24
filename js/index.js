@@ -1,7 +1,7 @@
 /*
     Freeddev - Index script
-    Version 2.0-dev
-    Copyright (c) 2022-2023 FreedTapstry21
+    Version 2.0
+    Copyright (c) 2022-2024 FreedTapstry21
 */
 
 /* 
