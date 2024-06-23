@@ -1,6 +1,6 @@
 /*
     Freeddev - Index script
-    Version 2.1-dev
+    Version 2.1
     Copyright (c) 2022-2024 FreedTapstry21
 */
 
